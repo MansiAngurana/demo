@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSUDO</title>
+</head>
+<body>
+    <style>
+        a:link{
+color: aquas;
+        }
+        a:visited{
+color: red;
+        }
+        a:hover{
+        font-weight: bolder;
+        }
+        li:nth-child(even){
+            content: "*";
+            color: red;
+
+        }
+        
+        label::after{
+          content:"*";
+          color:red ;
+        }
+        .namebox:focus{
+            color: aqua;
+            background-color: aliceblue;
+            width: 400px;
+        }
+        
+        /* p:hover{
+        display: none;
+        background-color: aqua;
+        padding: 20px;
+       } */
+       img:hover~p{
+        display: none;
+        background-color: aqua;
+        padding: 20px;
+       }
+      
+       /* img~p::before:hover{
+        display: none;
+        background-color: aqua;
+        padding: 20px;
+       } */
+       
+       /* div{
+        height: 300px;
+        width: 350px;
+        border: 2px solid black;
+       } */
+       /* div:hover{
+        display: block;
+       } */
+      
+       /* td:nth-child(odd){
+        color: red;
+
+       } */
+       td:nth-child(even){
+        color: red;
+
+       }
+    </style> 
+    <a href="https://www.w3schools.com/"> Go to W3School</a>
+    <hr>
+    <br><br>
+<ol>
+    <li>Abc</li>
+    <li>Efg</li>
+    <li>Mno</li>
+    <li>Qrs</li>
+</ol>
+<br><br>
+<hr>
+<form action="Name">
+<label for="Name">Name</label>
+<input type="text" id ="Name" class="namebox">
+</form>
+<hr>
+<br><br>
+<div class="ABC">
+<img src="image4.jpg" alt="This is an image" height="200" width="250"> 
+<p class="xy">Culture of Punjab oil Painting on Black Velvet - Village Gallery Wall Painting - Home Decor </p>
+</div>
+<br><br>
+<hr>
+<table border="2" height="100" width="200">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+
+</table>
+
+</body>
+</html>

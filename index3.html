@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #938f8f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .nav-container {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        height: 100px;
+        width: 600px;
+        justify-content: center;
+        border: 2px solid black;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .nav-item {
+       
+        position: relative;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        background-color: 2px solid black;
+        
+      }
+
+      .home-icon::before,
+      .user-icon::before,
+      .camera-icon::before,
+      .settings-icon::before {
+        content: "🏠"; 
+        font-size: 20px;
+        
+
+      }
+
+      .home-icon:hover {
+        background-color: #548554;
+        border: 2px solid black;
+      top: -10px;
+      position: relative;
+       
+      }
+
+      .user-icon::before {
+        content: "👤";
+        
+      }
+
+      .user-icon:hover {
+        background-color: #c5ae85;
+        position: relative;
+        top: -10px;
+        border: 2px solid black;
+        
+        
+      }
+
+      .camera-icon::before {
+        content: "📷";
+        
+      }
+
+      .camera-icon:hover {
+        background-color: #1e90ff;
+        position: relative;
+        top: -10px;
+        border: 2px solid black;
+       
+      
+      }
+
+      .settings-icon::before {
+        content: "⚙️";
+     
+      }
+
+      .settings-icon:hover {
+     background-color: rgb(231, 154, 154);
+     position: relative;
+        top: -10px;
+      }
+
+      .text {
+        opacity: 0;
+        font-size: 12px;
+        margin-top: 5px;
+  
+      }
+
+      .nav-item:hover .text {
+        opacity: 1;
+      }
+      .camera-icon :hover{
+        background-color: #1e90ff;
+        bottom: 10px;
+        position: relative;
+      }
+      .settings-icon :hover{
+        background-color: #1e90ff;
+        bottom: 10px;
+        position: relative;
+      }
+
+      .settings-icon :hover{
+        /* background-color: #1e90ff; */
+        bottom: 10px;
+        position: relative;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <div class="icon home-icon"></div>
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <div class="icon user-icon"></div>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <div class="icon camera-icon"></div>
+            <span class="text">Camera</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <div class="icon settings-icon"></div>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        .position{
+            width: 500px;
+          border: 2px solid red;
+          margin: auto;
+          text-align: center;
+        }
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+           border-radius: 10%;   
+        }
+        .box1{
+            background-color: rgb(27, 112, 176);
+            position:absolute;  
+           /* top: 50px; */
+           /* bottom:90px ; */
+           right: 875px;
+            top: 80px;            
+        }
+        .box2{
+         /* position: relative; */
+         background-color: blue;
+         bottom: 20px;        
+        }
+        .box3{
+            background-color: brown;
+            z-index: 0;
+        }
+        .box4{
+            background-color: blueviolet;  
+        }
+        .box5{
+            background-color: chartreuse;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            border: 2px solid black;
+        }
+        hr{
+            border: solid black ;
+        }
+        </style>
+</head>
+<body>
+    css position
+    <div class="position">
+    <div class="box box1">one</div>
+    <div class=" box box2">Two</div>
+    <div class=" box box3" >Three</div>
+    <div class=" box box4">Four</div>
+    <div class=" box box5">five</div>
+</div>  
+</body>
+</html>

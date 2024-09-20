@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .boxx{
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* justify-content: center; */
+            gap:60px;
+            margin: 40px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+            /* transform: translate(40px,40px) rotate(45deg) scale(1) ;
+            margin-top: 50px; */
+            transform: translate(10px, 10px) rotate(45deg);
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(59, 98, 189);
+            border: 2px solid black;
+             /* transform: translate(100px,100px) rotate(45deg) scale(2) skew(15deg, 15deg)  ; */
+            /* margin: 50px; */
+            transform: translate(5px, 5px) skew(10deg, 10deg);
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 50%;
+             
+        }
+        .box3{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(32, 163, 224);
+            border: 2px solid black;
+            border-radius: 30% ;
+    
+        }
+        .box4{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+            transform: rotate(45deg);
+            border-radius: 40%;
+        }
+        .box5{
+            height: 100px;
+            width: 30px;
+            background-color: rgb(14, 110, 125);
+            border: 2px solid black;
+            transform: rotate(45deg);
+           
+           
+
+        }
+        .box6{
+            height: 100px;
+            width: 30px;
+            background-color: rgb(14, 110, 125);
+            border: 2px solid black;  
+          transform: rotate(95deg);
+        }
+        .box7{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(14, 110, 125);
+            border: 2px solid black; 
+        }
+        .box8{
+            height: 50px;
+            width: 50px;
+            background-color:azure;
+            border: 2px solid black; 
+         margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxx">
+    <div class="box"></div>
+    <div class="box1"></div><br>
+    <div class="box2"></div><br>
+    <div class="box3"></div><br>
+    <div class="box4"></div><br>
+    <div class="box5"> <div class="box6"></div>
+       </div><br>
+       <div class="box7"> <div class="box8"></div></div>
+</div>
+</body>
+</html>
